@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew's Networking Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f7f9; color: #333; }
+        header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; padding: 2rem; text-align: center; }
+        nav { background: #1e2937; padding: 1rem; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #60a5fa; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 20px; }
+        section { background: white; padding: 2rem; margin-bottom: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        h1, h2 { color: #1e40af; }
+        .nav-menu { display: flex; justify-content: center; flex-wrap: wrap; }
+        img { max-width: 100%; border-radius: 8px; margin: 15px 0; }
+        ul { line-height: 1.8; }
+        footer { text-align: center; padding: 1.5rem; background: #1e2937; color: white; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Andrew's Networking Portfolio</h1>
+        <p style="font-size: 1.2rem;">Computer Networking • AP Networking • Mr. Hood</p>
+    </header>
+
+    <nav>
+        <div class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#fundamentals">Networking Fundamentals</a>
+            <a href="#ipmac">IP & MAC Addresses</a>
+            <a href="#labs">Tools & Labs</a>
+            <a href="#careers">Careers & Certifications</a>
+        </div>
+    </nav>
+
+    <!-- Page 1: Home -->
+    <div class="container" id="home">
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Welcome to my Networking Portfolio. This website showcases my learning in computer networking, including network devices, IP addressing, protocols, hands-on labs with Wireshark and Cisco Packet Tracer, and career research. My goal is to demonstrate the technical skills I am building for future technology careers.</p>
+            
+            <p><strong>Class:</strong> Networking / AP Networking • <strong>Teacher:</strong> Mr. Hood • <strong>Date:</strong> May 2026</p>
+        </section>
+    </div>
+
+    <!-- Page 2: Fundamentals -->
+    <div class="container" id="fundamentals">
+        <section>
+            <h2>Networking Fundamentals</h2>
+            
+            <h3>What is a Computer Network?</h3>
+            <p>A computer network is a group of devices connected together so they can share resources and communicate with each other.</p>
+            
+            <h3>Network Types</h3>
+            <ul>
+                <li><strong>LAN (Local Area Network)</strong>: Small area (home, school, office)</li>
+                <li><strong>WAN (Wide Area Network)</strong>: Large geographic area (connects cities – the Internet is the biggest WAN)</li>
+                <li><strong>WLAN (Wireless Local Area Network)</strong>: Wireless version of a LAN (Wi-Fi)</li>
+            </ul>
+            
+            <h3>Key Devices</h3>
+            <ul>
+                <li><strong>Client</strong>: Device that requests data (laptop, phone)</li>
+                <li><strong>Server</strong>: Powerful computer that provides services/files</li>
+                <li><strong>Router</strong>: Connects different networks and routes traffic</li>
+                <li><strong>Switch</strong>: Connects devices within the same LAN</li>
+                <li><strong>Access Point</strong>: Enables wireless (Wi-Fi) connections</li>
+            </ul>
+            
+            <h3>Vocabulary</h3>
+            <ul>
+                <li><strong>Protocol</strong>: Rules for how devices communicate</li>
+                <li><strong>Bandwidth</strong>: Amount of data that can be sent per second</li>
+                <li><strong>Router / Switch / Access Point / Client / Server / LAN / WAN</strong></li>
+            </ul>
+            
+            <!-- Add diagram image here -->
+            
+        </section>
+    </div>
+
+    <!-- Page 3: IP & MAC -->
+    <div class="container" id="ipmac">
+        <section>
+            <h2>IP Addressing and MAC Addresses</h2>
+            
+            <h3>IP Address</h3>
+            <p>An IP address is like a street address for devices on a network.</p>
+            <ul>
+                <li><strong>IPv4</strong>: 192.168.1.1 (32-bit, most common)</li>
+                <li><strong>IPv6</strong>: 2001:db8::1 (128-bit, much larger address space)</li>
+            </ul>
+            
+            <h3>MAC Address</h3>
+            <p>A MAC address is a unique hardware address assigned to every network card. It looks like: <strong>00-1A-2B-3C-4D-5E</strong>.</p>
+            <p>The first 3 octets (OUI) identify the manufacturer (e.g., Apple, Dell, Cisco).</p>
+            
+            <h3>Examples</h3>
+            <ul>
+                <li><strong>Private IP</strong>: 192.168.1.50 (used inside your home/school)</li>
+                <li><strong>Public IP</strong>: The address your ISP gives you (visible on the internet)</li>
+            </ul>
+            
+            <p><strong>Other Terms:</strong> Subnet Mask, Default Gateway, DNS Server</p>
+            
+            <!-- Add ipconfig screenshot here -->
+    </div>
+
+    <!-- Page 4: Labs -->
+    <div class="container" id="labs">
+        <section>
+            <h2>Networking Tools and Labs</h2>
+            
+            <h3>Lab 1: ipconfig and ping</h3>
+            <p>I used Command Prompt to run <code>ipconfig /all</code> to view my IP address, MAC address, subnet mask, and default gateway. I then used <code>ping 8.8.8.8</code> and <code>ping www.google.com</code> to test connectivity.</p>
+            <p><strong>Reflection:</strong> I learned that ping uses ICMP and is a key troubleshooting tool.</p>
+            
+            <h3>Lab 2: Wireshark Packet Capture</h3>
+            <p>I captured live network traffic while browsing. I observed DNS queries, TCP handshakes, and HTTP/HTTPS packets.</p>
+            <p><strong>Reflection:</strong> This showed me how data actually travels across networks in packets and the difference between TCP and UDP.</p>
+            
+            <!-- Add your actual screenshots here -->
+        </section>
+    </div>
+
+    <!-- Page 5: Careers -->
+    <div class="container" id="careers">
+        <section>
+            <h2>Networking Careers and Certifications</h2>
+            
+            <h3>Career 1: Network Administrator</h3>
+            <p>Manages company networks, routers, switches, and user access.</p>
+            
+            <h3>Career 2: Cybersecurity Analyst</h3>
+            <p>Monitors networks for threats and protects systems from attacks.</p>
+            
+            <h3>Career 3: Cloud Network Engineer</h3>
+            <p>Designs and manages networks in cloud platforms (AWS, Azure).</p>
+            
+            <h3>Recommended Certifications</h3>
+            <ul>
+                <li>CompTIA Network+</li>
+                <li>Cisco CCNA</li>
+                <li>CompTIA Security+</li>
+            </ul>
+            
+            <h3>Personal Reflection</h3>
+            <p>I am most interested in becoming a Network Administrator or Cybersecurity Analyst. I enjoy troubleshooting and learning how networks work. My next goal is to earn the CompTIA Network+ certification.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Andrew's Networking Portfolio © 2026 • Created for Mr. Hood's Networking Class</p>
+
+</body>
+</html>
